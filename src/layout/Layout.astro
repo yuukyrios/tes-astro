@@ -1,0 +1,27 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+		<script> 
+		const navBar = document.querySelector("nav");
+		navBar.addEventListener("click",() => alert("navbar di klik"));
+		</script>
+	</head>
+	<body>
+        <nav>
+			<p> NAVBAR MENU</p>
+			<ul>
+            <li><a href="/">option A</a></li>
+            <li><a href="/about">option B</a></li>
+			<li><a href="/contact">option C</a></li>
+			</ul>
+        </nav>
+		<slot/>
+        <footer style="background-color: aqua; padding-top: 40px;">
+            <h1>this is footer</h1>
+        </footer>
+	</body>
+</html>
